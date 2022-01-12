@@ -9,7 +9,7 @@
     </div>
     <div class="col-lg-12 mb-4">
         {% for genre in genres %}
-        <a href="{{ url_for('homepage', list_type="popular") }}" type="button" class="button1" data-toggle="button" aria-pressed="false" autocomplete="on">{{ genre.name }}</a>
+        <a href="{{ url_for('homepage', list_type= genre.name ) }}" type="button" class="button1" data-toggle="button" aria-pressed="false" autocomplete="on">{{ genre.name }}</a>
         {% endfor %}
     </div>
 
